@@ -13,14 +13,14 @@
     <aop:aspectj-autoproxy proxy-target-class="true"/>
     <import resource="classpath:Application-dao.xml"/>
     <!--        通过mapperFactoryBean方式整合mybatis，省略SqlSessionDaoSupport实现类-->
-    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
-        <property name="mapperInterface" value="com.mywork.spring.dao.user.UserMapper"/>
-    </bean>
-
-    <!--    &lt;!&ndash;    批量配置方式整合mybatis&ndash;&gt;-->
-    <!--    <bean id="mappers" class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
-    <!--        <property name="sqlSessionFactoryBeanName" value=""/>-->
-    <!--        <property name="basePackage" value="com.mywork.spring.dao.*"/>-->
+    <!--    <bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
+    <!--        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>-->
+    <!--        <property name="mapperInterface" value="com.mywork.spring.dao.user.UserMapper"/>-->
     <!--    </bean>-->
+
+    <!--    批量配置方式整合mybatis-->
+    <bean id="mappers" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value=""/>
+        <property name="basePackage" value="com.mywork.spring.dao.*"/>
+    </bean>
 </beans>

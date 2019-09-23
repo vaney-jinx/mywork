@@ -8,9 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>SSM-PROJECT-DEMO</title>
+    <title>waiting</title>
 </head>
-<body>
-<a href="showUser">查询所有用户</a>
+<body onload="window.location.href='../app/myPages/login/AgLogin.html'">
 </body>
 </html>

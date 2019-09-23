@@ -1,0 +1,39 @@
+﻿							
+htNgPtMail01FixdTab.js	200	script	htNgMail01.jsp:195	2.6 KB	245 ms	
+htNgPtMsg01FastView.js	200	script	htNgMail01.jsp:194	21.7 KB	252 ms	
+htNgPtMsg01PageMenu.js	200	script	htNgMail01.jsp:200	3.1 KB	261 ms	
+htNgPtMsg01Query.js	200	script	htNgMail01.jsp:202	6.4 KB	261 ms	
+htNgPtMsg01PageHead.js	200	script	htNgMail01.jsp:199	2.3 KB	261 ms	
+htNgPtMsg01MarkList.js	200	script	htNgMail01.jsp:197	4.8 KB	262 ms	
+htNgPtMsg01MoveTo.js	200	script	htNgMail01.jsp:198	7.7 KB	262 ms	
+htNgPtMsg01ShowAllContent.js	200	script	htNgMail01.jsp:203	1.4 KB	263 ms	
+htNgPtMsg01TitleTr.js	200	script	htNgMail01.jsp:209	687 B	271 ms	
+htNgPtMsg01ContentTd.js	200	script	htNgMail01.jsp:206	744 B	271 ms	
+htNgPtMsg01ContentTr.js	200	script	htNgMail01.jsp:207	1.0 KB	271 ms	
+htNgPtMsg01TimeGroupTr.js	200	script	htNgMail01.jsp:208	777 B	271 ms	
+htNgPtMsg01ListTable.js	200	script	htNgMail01.jsp:205	4.8 KB	272 ms	
+htNgPtMail01Tab.js	200	script	htNgMail01.jsp:204	15.4 KB	273 ms	
+htNgPtMsg01Tr.js	200	script	htNgMail01.jsp:210	932 B	284 ms	
+htNgMail01View.js	200	script	htNgMail01.jsp:235	3.8 KB	286 ms	
+htNgMail0101Ctrl.js	200	script	htNgMail01.jsp:214	10.0 KB	288 ms	
+htNgMail0116Ctrl.js	200	script	htNgMail01.jsp:229	21.4 KB	291 ms	
+htNgMail01Ctrl.js	200	script	htNgMail01.jsp:233	19.2 KB	291 ms	
+htNgMsg01Manager.js	200	script	htNgMail01.jsp:212	99.8 KB	308 ms	
+15.00 s20.00 s25.00 s30.00 s35.00 s
+166 requests ❘ 1.4 MB transferred
+
+Console
+
+
+
+
+Preserve log
+.
+2
+http://192.168.1.54/htoa/css/CN/BLUE/menu.css Failed to load resource: the server responded with a status of 404 (Not Found)
+Navigated to http://192.168.1.54/OAapp/WebObjects/OAapp.woa/wo/com.oa8000.mainapp.OaPubMiddlePop/nKq9BqNL8SXhPIcnzYgQjg/2.3.0
+2.3.0:21 GET http://192.168.1.54/htoa/css/CN/BLUE/menu.css 
+buffalo.js:42Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.
+topForFrame.js:215 Uncaught TypeError: Cannot read property 'style' of null
+jquery-migrate.min.js:2 JQMIGRATE: Migrate is installed, version 1.4.1
+.
