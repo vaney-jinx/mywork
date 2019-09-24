@@ -14,7 +14,12 @@ agApp.service("$AgTransportService", function ($http) {
                 'Pragma': 'no-cache'
             }
         }).then(function (resp) {
-            call(resp.data);
+            var respObj = resp.data;
+            if (respObj.type === 1) {
+                call(respObj.data);
+            } else {
+                alert(respObj.data);
+            }
         }).finally(function () {
 
         });

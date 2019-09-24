@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.8.2">
+    <CLASSES>
+      <root url="jar://D:/Tomcat8/lib/commons-beanutils-1.8.2.jar!/" />
+      <root url="jar://D:/Tomcat8/lib/commons-collections-3.2.1.jar!/" />
+      <root url="jar://D:/Tomcat8/lib/commons-logging-api-1.1.1.jar!/" />
+      <root url="jar://D:/Tomcat8/lib/ezmorph-1.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
