@@ -12,7 +12,7 @@
     <context:component-scan base-package="com.mywork.spring.controller"/>
     <!-- 配置视图解析器 如何把handler 方法返回值解析为实际的物理视图 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/page/"/>
+        <property name="prefix" value="/WEB-INF/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 </beans>
