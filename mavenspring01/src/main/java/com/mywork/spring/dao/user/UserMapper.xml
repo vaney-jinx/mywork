@@ -7,7 +7,8 @@
         select u.*, h.hr_staff_info_id from user_user u left join  hr_staff_info h on h.hr_staff_info_id = u.user_id
     </select>
 
-    <select id="getLoginUser" resultType="java.util.Map">
+    <select id="getLoginUser" parameterType="com.mywork.spring.dto.user.UserDto" resultType="java.util.Map">
         select user_name, password from user_user where user_show_id = #{userName}
+        <if test="password != null and password != ''">and (password = #{password})</if>
     </select>
 </mapper>

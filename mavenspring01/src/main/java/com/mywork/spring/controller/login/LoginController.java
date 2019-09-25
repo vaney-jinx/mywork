@@ -24,7 +24,7 @@ public class LoginController extends BaseController {
             System.out.println("data===" + data);
             UserService userService = getBean("userService");
             UserDto userDto = (UserDto) JSONObject.toBean(getJsonData(data), UserDto.class);
-            return returnOkWrapper(userService.login(userDto.getUserName(), userDto.getPassword()));
+            return returnOkWrapper(userService.login(userDto));
         } catch (Throwable e){
             e.printStackTrace();
             return returnErrorWrapper(e.getMessage());

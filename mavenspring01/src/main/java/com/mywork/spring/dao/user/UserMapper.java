@@ -1,6 +1,6 @@
 package com.mywork.spring.dao.user;
 
-import org.apache.ibatis.annotations.Param;
+import com.mywork.spring.dto.user.UserDto;
 
 import java.util.List;
 import java.util.Map;
@@ -8,5 +8,5 @@ import java.util.Map;
 public interface UserMapper {
     List getUser();
 
-    Map getLoginUser(@Param("userName") String userName, @Param("password")String password);
+    Map getLoginUser(UserDto userDto);
 }

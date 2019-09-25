@@ -2,6 +2,7 @@ package com.mywork.spring.service;
 
 import com.mywork.spring.annotation.AddRedis;
 import com.mywork.spring.dao.user.UserMapper;
+import com.mywork.spring.dto.user.UserDto;
 import com.mywork.spring.service.base.ServiceBase;
 import org.springframework.stereotype.Service;
 
@@ -17,9 +18,9 @@ public class UserService extends ServiceBase {
         return userMapper.getUser();
     }
 
-    public String login(String userName, String password) throws Exception {
+    public String login(UserDto userDto) throws Exception {
         UserMapper userMapper = getBean("userMapper");
-        Map map = userMapper.getLoginUser(userName, password);
+        Map map = userMapper.getLoginUser(userDto);
         if ( Objects.isNull(map) || map.isEmpty()){
             throw new Exception("账号密码错误或者用户不存在");
         }
