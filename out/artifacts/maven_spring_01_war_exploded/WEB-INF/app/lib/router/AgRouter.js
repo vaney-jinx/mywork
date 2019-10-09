@@ -20,7 +20,16 @@ agApp.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state,
                 return $ocLazyLoad.load([appPathPrefix + "login/view/AgLogin.js"]);
             }]
         }
-    })
+    }).state("AgMain", {
+            url: "/AgMain",
+            params: {data: null},
+            templateUrl: appPathPrefix + "main/view/AgMain.html",
+            resolve: {
+                loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
+                    return $ocLazyLoad.load([appPathPrefix + "main/view/AgMain.js"]);
+                }]
+            }
+        });
 });
 
 

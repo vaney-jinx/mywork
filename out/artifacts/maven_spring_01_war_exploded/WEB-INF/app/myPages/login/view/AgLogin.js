@@ -1,7 +1,7 @@
 /**
  * 登录页面
  */
-agApp.controller("AgLoginCtrl", function ($scope, $AgTransportService) {
+agApp.controller("AgLoginCtrl", function ($scope, $state, $AgTransportService) {
     $scope.AgLoginModel = {};
     $scope.AgLoginModel.welcome = "Welcome to my APP";
     $scope.AgLoginModel.userName = "";
@@ -9,8 +9,8 @@ agApp.controller("AgLoginCtrl", function ($scope, $AgTransportService) {
 
     $scope.signIn = function () {
         var call = function(info){
-            console.log(info);
+            $state.go("AgMain", {data: info});
         };
-        $AgTransportService.transportData("/login/signIn", {userName: $scope.AgLoginModel.userName, password: $scope.AgLoginModel.password}, call);
+        $AgTransportService.transportData("/login/signIn/", {userName: $scope.AgLoginModel.userName, password: $scope.AgLoginModel.password}, call);
     };
 });

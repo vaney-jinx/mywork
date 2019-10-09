@@ -21,11 +21,17 @@ public class BaseController implements ApplicationContextAware {
         return JSONObject.fromObject(data);
     }
 
-    protected String returnOkWrapper(String v) {
-        return "{\"type\": 1, \"data\": \"" + v + "\"}";
+    protected String returnOkWrapper(Object v) {
+        JSONObject o = new JSONObject();
+        o.put("type", 1);
+        o.put("data", v);
+        return o.toString();
     }
 
-    protected String returnErrorWrapper(String v) {
-        return "{\"type\": 0, \"data\": \"" + v + "\"}";
+    protected String returnErrorWrapper(Object v) {
+        JSONObject o = new JSONObject();
+        o.put("type", 0);
+        o.put("data", v);
+        return o.toString();
     }
 }
